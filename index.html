@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- font aweson icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -19,51 +22,80 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>My Protfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Kiran Portfolio Website</title>
   </head>
   <body>
     <div class="wrapper">
-      <!-- Dark mode button -->
+      <!-- dark mode button -->
 
-      <input type="checkbox" name="" id="darkMode" />
-      <label for="darMode" class="dark-mode-toggle">
-        <i class="fa-solid fa-circle-half-stroke"></i
-      ></label>
+      <input type="checkbox" id="darkMode" />
 
-      <!-- 
-        Heaeder section -->
-      <header>
-        <div class="container flex header">
-          <div class="logo flex">
-            <div>
-              <h1>Kiran</h1>
+      <div class="wrapper">
+        <label for="darkMode" class="dark-mode-toggle">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </label>
+
+        <!-- header section  -->
+        <header>
+          <div class="container flex header">
+            <div class="logo flex">
+              <div>
+                <h1>Kiran</h1>
+              </div>
+              <div>
+                <h1 class="line">Soft.Developer</h1>
+              </div>
             </div>
-            <div class="line">
-              <h1>Frontend Developer</h1>
+            <div class="menu">
+              <input type="checkbox" id="check" />
+              <label for="check" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+              <ul class="navigation flex">
+                <li><a href="">Home</a></li>
+                <li><a href="">Skills </a></li>
+                <li><a href="">Projects </a></li>
+                <li><a href="">About </a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
             </div>
           </div>
-          <div class="menu">
-            <input type="checkbox" name="" id="check" />
-            <label for="check" class="menu-icon"
-              ><i class="fa-solid fa-bars"></i
-            ></label>
-            <ul class="navigation flex">
-              <li><a href="">Home</a></li>
-              <li><a href="">SKills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
+        </header>
+
+        <!-- hero section  -->
+        <section class="container hero-section">
+          <div class="hero">
+            <div class="flex left">
+              <div>Hi i'm <span class="name">Kiran Manandhar</span></div>
+
+              <div class="tag">Website Developer</div>
+
+              <p>I love coding</p>
+              <div>
+                <button>
+                  Download CV <i class="fa-solid fa-download"></i>
+                </button>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./assest/link.jpg" alt="profile picture" />
+            </div>
           </div>
-        </div>
-      </header>
-      <!-- Hero Section -->
-      <!-- Banner Section -->
-      <!-- SKills section -->
-      <!-- Projectds Section -->
-      <!-- About Me Section -->
-      <!-- Contact me section -->
-      <!-- Footer section -->
+        </section>
+
+        <!-- Bannder section  -->
+
+        <!-- Skills section  -->
+
+        <!-- Projects section  -->
+
+        <!-- About me section  -->
+
+        <!-- Contact me section  -->
+
+        <!-- footer section -->
+      </div>
     </div>
   </body>
 </html>
