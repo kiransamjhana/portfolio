@@ -269,9 +269,11 @@ header {
 .about {
   margin-top: 3rem;
   padding: 7rem 0;
+  background: var(--color-orange);
 }
 .aboutme {
   justify-content: space-between;
+  align-items: center;
 }
 
 .content {
@@ -294,6 +296,25 @@ header {
 
 .my-bio {
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4rem;
+}
+
+.tag {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.interests {
+  padding-left: -4rem;
+}
+
+.interests span {
+  text-decoration: solid;
+  font-weight: bolder;
+  letter-spacing: normal;
 }
 
 .my-bio p:nth-child(4) {
@@ -302,6 +323,8 @@ header {
 
 .tag div span:hover {
   cursor: pointer;
+  text-emphasis-color: var(--color-orange);
+  text-transform: 1.5%;
 }
 
 /* <!-- Contact me section  --> */
