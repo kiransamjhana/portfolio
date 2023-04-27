@@ -1,5 +1,4 @@
 /* Default styles */
-
 html {
   scroll-behavior: smooth;
 }
@@ -43,7 +42,6 @@ a {
 
   --body-bg: #fff;
   --text-color: var(--color-dark);
-  /* --border-color: var(--color-dark); */
   --border-color: var(--color-dark);
 
   /* for dark mode */
@@ -77,9 +75,12 @@ a {
 
 /* dark more activation */
 #darkMode:checked + .wrapper {
-  background: var(--dark-bg);
+  --body-bg: var(--dark-bg);
+  --text-color: var(--dark-text-color);
   min-height: 100vh;
   color: var(--dark-text-color);
+
+  --border-color: var(--dark-border-color);
 }
 
 /* <!-- Header section  --> */
@@ -87,8 +88,7 @@ header {
   box-shadow: 0 0 10px 5px grey;
   position: sticky;
   top: 0;
-  /* z-index: 99; */
-  /* background: var(--dark-bg); */
+  background: var(--body-bg);
 }
 .header {
   justify-content: space-between;
@@ -167,8 +167,9 @@ header {
   padding: 0.8rem 2rem;
   border: none;
   background: var(--color-dark);
+  /* background: var(--body-bg); */
   border-radius: 2rem;
-  color: var(--body-bg);
+  color: white;
   font-size: 1.1rem;
 }
 .left button i {
@@ -265,91 +266,87 @@ header {
 .projects .projects-container .project-card img {
   width: 100%;
 }
+
 /* <!-- About me section  --> */
 .about {
-  margin-top: 3rem;
-  padding: 7rem 0;
-  background: var(--color-orange);
-}
-.aboutme {
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 7rem;
+  margin-bottom: 3rem;
 }
 
-.content {
+.about-content {
   margin-top: 4rem;
   gap: 3rem;
-  width: 50%;
+  /* width: 50%; */
 }
 
-.content .img1 {
+.about-content .myimg {
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.content .img1 img {
-  min-width: 350%;
-  max-width: 40%;
+.about-content .myimg img {
+  min-width: 350px;
+  max-width: 40px;
 }
 
-.my-bio {
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 4rem;
+.my-bio h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
-
-.tag {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.interests {
-  padding-left: -4rem;
-}
-
-.interests span {
-  text-decoration: solid;
-  font-weight: bolder;
-  letter-spacing: normal;
-}
-
 .my-bio p:nth-child(4) {
   font-weight: bolder;
+  margin: 2rem 0;
+}
+.my-bio .tag {
+  font-weight: bold;
 }
 
-.tag div span:hover {
+.my-bio .tag + div {
+  padding: 1rem;
+}
+.my-bio .tag + div span {
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+}
+.my-bio .tag + div span:hover {
   cursor: pointer;
-  text-emphasis-color: var(--color-orange);
-  text-transform: 1.5%;
+  background: grey;
 }
-
 /* <!-- Contact me section  --> */
-
-.get-touch {
+.contact {
   padding-top: 7rem;
   margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 10rem;
 }
 
-.icon > div i {
-  font-weight: bolder;
+.contact .social {
+  margin: 5rem 0;
+  justify-content: space-around;
+}
+
+.social a:nth-child(1) {
+  color: blue;
+}
+.social a:nth-child(2) {
+  color: skyblue;
+}
+.social a:nth-child(3) {
+  color: rgb(65, 65, 240);
+}
+.social a:nth-child(4) {
+  color: red;
+}
+
+.contact .social i {
   font-size: 4rem;
-  letter-spacing: 3rem;
-  justify-content: center;
-  align-content: center;
 }
 
-.log {
-  background: var(--color-orange);
-  border-radius: 50%;
-  padding: 1rem;
-  width: 3rem;
-  height: 3rem;
+.contact .email-section {
   justify-content: center;
-  align-items: center;
+  margin-top: 4rem;
 }
 
 .email {
@@ -358,43 +355,44 @@ header {
   color: var(--body-bg);
   width: 400px;
   border-radius: 100px;
-}
+  border: var(--border-color);
 
-.email-section {
+  justify-content: center;
   align-items: center;
-  padding: 1rem;
+  font-size: 1.3rem;
+}
+.email .send {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--color-orange);
   justify-content: center;
   align-items: center;
 }
-/* .form {
-  background: #2a2a2a27;
-  width: fit-content;
-   */
 
 /* <!-- footer section --> */
 .footer {
   background: #2a2a2a;
   color: white;
+  padding: 3rem;
 }
-
-.footer.bottom {
-  text-align: center;
-  margin-top: auto;
-}
-
 .footer .top {
   justify-content: center;
   gap: 6rem;
 }
-
-footer .top ul {
+.footer .top ul {
   list-style: none;
   padding-left: 0;
+}
+.footer .top ul {
   line-height: 2.5rem;
 }
+.footer .bottom {
+  text-align: center;
+  margin-top: 2rem;
+}
 
-/* go up */
-
+/* go up button  */
 .go-up {
   position: fixed;
   width: 3rem;
