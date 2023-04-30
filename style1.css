@@ -407,3 +407,69 @@ header {
 
   font-size: 2rem;
 }
+
+.contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.contents a {
+  gap: 2rem;
+}
+
+/* setting media query for mobile */
+@media (max-width: 600px) {
+  .menu-icon {
+    display: flex;
+    justify-content: right;
+    position: relative;
+  }
+
+  .contents {
+    display: none;
+  }
+
+  .menu-icon :hover {
+    display: block;
+    cursor: pointer;
+  }
+  .menu:hover .contents {
+    display: block;
+    position: absolute;
+    background-color: rgb(111, 187, 90);
+    max-width: fit-content;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .right {
+    margin-top: 0rem;
+  }
+  .right img {
+    height: fit-content;
+    width: fit-content;
+  }
+  .left .tag {
+    letter-spacing: normal;
+  }
+
+  .banner {
+    border: none;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner .info-divider {
+    display: none;
+  }
+}
