@@ -407,6 +407,7 @@ header {
 
   font-size: 2rem;
 }
+<<<<<<< HEAD
 
 .contents {
   display: flex;
@@ -473,3 +474,5 @@ header {
     display: none;
   }
 }
+=======
+>>>>>>> ee2b2f34a2bc49cb2a0aba0c29b619edb07f38bc
