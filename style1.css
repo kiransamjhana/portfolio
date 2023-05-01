@@ -407,7 +407,6 @@ header {
 
   font-size: 2rem;
 }
-<<<<<<< HEAD
 
 .contents {
   display: flex;
@@ -431,14 +430,25 @@ header {
   }
 
   .menu-icon :hover {
-    display: block;
+    display: flex;
     cursor: pointer;
+    align-items: end;
   }
   .menu:hover .contents {
-    display: block;
+    display: flex;
     position: absolute;
+
     background-color: rgb(111, 187, 90);
-    max-width: fit-content;
+    width: 200px;
+    height: 400px;
+    align-items: end;
+    margin-left: 5rem;
+    justify-content: space-between;
+    border: #2a2a2a;
+  }
+
+  .menu-icon .navigation a {
+    align-items: end;
   }
 
   .navigation {
@@ -474,5 +484,3 @@ header {
     display: none;
   }
 }
-=======
->>>>>>> ee2b2f34a2bc49cb2a0aba0c29b619edb07f38bc
