@@ -421,10 +421,9 @@ header {
 @media (max-width: 600px) {
   .menu-icon {
     display: flex;
-    justify-content: right;
-    position: relative;
+    justify-content: space-between;
+    position: absolute;
   }
-
   .contents {
     display: none;
   }
@@ -438,13 +437,11 @@ header {
     display: flex;
     position: absolute;
 
-    background-color: rgb(111, 187, 90);
-    width: 200px;
-    height: 400px;
-    align-items: end;
-    margin-left: 5rem;
-    justify-content: space-between;
-    border: #2a2a2a;
+    background: #7b7a84;
+    /* width: 200px; */
+    /* height: 500px;
+
+    width: 300px; */
   }
 
   .menu-icon .navigation a {
@@ -483,4 +480,9 @@ header {
   .banner .info-divider {
     display: none;
   }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
 }
